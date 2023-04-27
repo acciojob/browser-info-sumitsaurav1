@@ -1,7 +1,6 @@
-//your JS code here. If required.
-let browserName=navigator.userAgent.toLowerCase().split("/")[0]
-let browserVerson=navigator.userAget.toLowerCase().split("/")[1]
-let s="You are using "+browserName+" version "+browserVerson;
+//
+let browserName = navigator.appName
+let browserVersion= navigator.appVersion;
 
-let div = document.getElementById("browser-info");
-div.innerText=s;
+let browserInfo = document.getElementById("browser-info")
+browserInfo.innerText="You are using "+browserName+" version "+browserVersion
